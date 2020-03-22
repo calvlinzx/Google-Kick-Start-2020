@@ -8,14 +8,11 @@ for x in range(1, T + 1):
             diff = ts[i+1] - t
             diffs.append(diff)
     max_diff = max(diffs)
+    diffs.remove(max_diff)
     if max_diff % 2 == 0:
-        diffs.remove(max_diff)
         diffs.append(max_diff // 2)
-        y = max(diffs)
     else:
-        diffs.remove(max_diff)
-        diffs.append(max_diff // 2)
         diffs.append(max_diff // 2 + 1)
-        y = max(diffs)
+    y = max(diffs)
 
     print("Case #{}: {}".format(x, y), flush = True)

@@ -1,6 +1,3 @@
-
-
-
 T = int(input())
 for x in range(1, T + 1):
     N,B = map(int, input().split())
