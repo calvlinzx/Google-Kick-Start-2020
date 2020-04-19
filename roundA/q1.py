@@ -5,7 +5,6 @@ for x in range(1, T + 1):
     prices.sort(reverse = False)
     y = 0
     spent = 0
-    print(prices)
     for i in range(N):
         if spent + prices[i] <= B:
             spent += prices[i]    
