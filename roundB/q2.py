@@ -11,9 +11,7 @@ for x in range(1, T + 1):
         start = i * first
         for j in range(start, D+1):
             while alt:
-                #print(j, alt[bus], alt)
                 if j % alt[0] == 0:
-                    #print(alt[bus],j)
                     alt.pop(0)
                 else:
                     break
